@@ -69,7 +69,7 @@ create_json () {
 }
 
 run_ssserver () {
-    $SSSERVER -c $JSON_FILE 2>>/var/log/shadowsocks.log >>/var/log/shadowsocks.log & //Enable the log function
+    $SSSERVER -c $JSON_FILE 2>>/var/log/shadowsocks.log >>/var/log/shadowsocks.log &
     echo $! > $SSSERVER_PID 
 }
 
